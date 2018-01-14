@@ -10,6 +10,7 @@ import Cocoa
 
 class ViewController: NSViewController {
     
+    @IBOutlet weak var filesLabel: NSTextField!
     @IBOutlet weak var referenceImagesTableView: NSTableView!
     @IBOutlet weak var actualImageView: NSImageView!
     @IBOutlet weak var referenceImage: NSImageView!
@@ -53,6 +54,7 @@ class ViewController: NSViewController {
                     
                     SCFileManager.shared.loadFilesList(folderURL: url, fileType: .failed, completion: { imageFiles in
                         self?.imageFiles = imageFiles
+                        self?.displayFilesCount()
                         self?.activityIndicator.stopAnimation(nil)
                         self?.referenceImagesTableView.reloadData()
                         self?.referenceImagesTableView.scrollRowToVisible(0)
@@ -68,6 +70,15 @@ class ViewController: NSViewController {
         super.viewWillAppear()
         
         openFolder(nil)
+    }
+    
+    private func displayFilesCount() {
+        var coundLabel = "files"
+        if imageFiles.count == 1 {
+            coundLabel = "file"
+        }
+        
+        filesLabel.stringValue = "(\(imageFiles.count) \(coundLabel))"
     }
 }
 
