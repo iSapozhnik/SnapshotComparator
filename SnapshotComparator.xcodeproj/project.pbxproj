@@ -11,6 +11,9 @@
 		FFDDD4341FFF88C300C49F2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDD4331FFF88C300C49F2F /* ViewController.swift */; };
 		FFDDD4361FFF88C300C49F2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFDDD4351FFF88C300C49F2F /* Assets.xcassets */; };
 		FFDDD4391FFF88C300C49F2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFDDD4371FFF88C300C49F2F /* Main.storyboard */; };
+		FFDDD4431FFF92AE00C49F2F /* ImageFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDD4411FFF92AE00C49F2F /* ImageFile.swift */; };
+		FFDDD4441FFF92AE00C49F2F /* ImageDirectoryLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDD4421FFF92AE00C49F2F /* ImageDirectoryLoader.swift */; };
+		FFF0B718200B8EF5000C12A5 /* SCFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF0B717200B8EF5000C12A5 /* SCFileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		FFDDD4381FFF88C300C49F2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFDDD43A1FFF88C300C49F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFDDD43B1FFF88C300C49F2F /* SnapshotComparator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SnapshotComparator.entitlements; sourceTree = "<group>"; };
+		FFDDD4411FFF92AE00C49F2F /* ImageFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFile.swift; sourceTree = "<group>"; };
+		FFDDD4421FFF92AE00C49F2F /* ImageDirectoryLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDirectoryLoader.swift; sourceTree = "<group>"; };
+		FFF0B717200B8EF5000C12A5 /* SCFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCFileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,9 @@
 		FFDDD4301FFF88C300C49F2F /* SnapshotComparator */ = {
 			isa = PBXGroup;
 			children = (
+				FFF0B717200B8EF5000C12A5 /* SCFileManager.swift */,
+				FFDDD4421FFF92AE00C49F2F /* ImageDirectoryLoader.swift */,
+				FFDDD4411FFF92AE00C49F2F /* ImageFile.swift */,
 				FFDDD4311FFF88C300C49F2F /* AppDelegate.swift */,
 				FFDDD4331FFF88C300C49F2F /* ViewController.swift */,
 				FFDDD4351FFF88C300C49F2F /* Assets.xcassets */,
@@ -134,6 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFF0B718200B8EF5000C12A5 /* SCFileManager.swift in Sources */,
+				FFDDD4441FFF92AE00C49F2F /* ImageDirectoryLoader.swift in Sources */,
+				FFDDD4431FFF92AE00C49F2F /* ImageFile.swift in Sources */,
 				FFDDD4341FFF88C300C49F2F /* ViewController.swift in Sources */,
 				FFDDD4321FFF88C300C49F2F /* AppDelegate.swift in Sources */,
 			);
@@ -269,6 +281,7 @@
 				DEVELOPMENT_TEAM = AME6L8LJ4E;
 				INFOPLIST_FILE = SnapshotComparator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "Sixt-AG.SnapshotComparator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -285,6 +298,7 @@
 				DEVELOPMENT_TEAM = AME6L8LJ4E;
 				INFOPLIST_FILE = SnapshotComparator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "Sixt-AG.SnapshotComparator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
