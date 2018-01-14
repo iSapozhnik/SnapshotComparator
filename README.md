@@ -1,1 +1,1 @@
-# SnapshotComparator
+# ![](Assets/header.png) SnapshotComparator
